@@ -1,0 +1,17 @@
+# Compiled files
+*.exe
+*.o
+*.obj
+
+# Temporary files
+*.tmp
+*.log
+
+# Personal editor files
+.vscode/
+
+# User-generated dataset files
+backend/data/*.csv
+
+# Keep the data directory
+!backend/data/.gitkeep

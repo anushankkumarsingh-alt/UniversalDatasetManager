@@ -1,0 +1,9 @@
+{
+    "columns": [
+        {
+            "name": "tiger",
+            "type": "Text"
+        }
+    ],
+    "name": "animal"
+}

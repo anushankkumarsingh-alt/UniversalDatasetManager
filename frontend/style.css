@@ -1,0 +1,107 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.sidebar h2 {
+    margin-top: 0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    padding: 8px;
+    cursor: pointer;
+}
+.sidebar li:hover {
+    background-color: #005bb5;
+    position: relative;
+}
+
+/* Delete icon styling */
+.delete-icon {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    color: #ff6666;
+    cursor: pointer;
+    font-size: 0.9em;
+    visibility: hidden;
+}
+
+.sidebar li:hover .delete-icon {
+    visibility: visible;
+}
+    background-color: #005bb5;
+}
+#new-dataset-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    background-color: #004c99;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#new-dataset-btn:hover {
+    background-color: #003d80;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+.card {
+    background-color: #e6f2ff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.hidden { display: none; }
+
+#records-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#records-table th, #records-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+#records-table th {
+    background-color: #cce0ff;
+}
+#export-csv {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#export-csv:hover {
+    background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+    body { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; }
+    .main { height: auto; }
+}
